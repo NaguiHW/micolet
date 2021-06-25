@@ -1,3 +1,78 @@
 // Place all the styles related to the Newsletters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.content {
+  width: 400px;
+  margin: 0 auto;
+
+  .title {
+    text-align: center;
+    margin: 50px 0;
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    h5 {
+      color: #E1E1E1;
+      margin: 0;
+    }
+  }
+
+  .message {
+    text-align: center;
+  }
+
+  .form {
+    width: 80%;
+    margin: 0 auto;
+
+    form {
+      label {
+        margin: 5px 0;
+      }
+
+      input[type="email"] {
+        width: 100%;
+        margin: 5px 0;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid rgb(165, 165, 165);
+
+        &:focus {
+          outline: 3px solid #66CC99;
+        }
+      }
+
+      p {
+        margin: 15px 0 5px;
+      }
+
+      input[type="checkbox"] {
+        margin: 5px 0 5px 10px;
+      }
+
+      .button {
+        display: flex;
+        justify-content: center;
+
+        input[type="submit"] {
+          margin: 25px auto;
+          background-color: #66CC99;
+          border: none;
+          padding: 12px 35px;
+          color: white;
+          font-size: 24px;
+          border-radius: 8px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #3c9e6d;
+          }
+        }
+      }
+    }
+  }
+}
