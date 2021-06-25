@@ -1,3 +1,16 @@
+<% flash.each do |type, msg| %>
+  <div>
+    <% if type == 'notice' %>
+      <%= msg %>
+    <% else %>
+      <ul>
+        <% msg.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+<% end %>
 <div class="title">
   <h1>micolet</h1>
   <h5>Moda casi nueva con garantía</h5>
@@ -9,13 +22,13 @@
 </div>
 
 <div class="form">
-  <%= form_with do |form| %>
+  <%= form_with url: newsletters_path do |form| %>
     <%= form.label :email, "Email" %><br>
     <%= form.email_field :email, required: true, placeholder: 'email@example.com' %><br>
     <p>Preferencias</p>
-    <%= form.check_box :woman_fashion %> Moda Mujer<br>
-    <%= form.check_box :man_fashion %> Moda Hombre<br>
-    <%= form.check_box :kid_fashion %> Moda Infantil<br>
+    <%= form.check_box :woman_fashion %> <%= form.label :woman_fashion, "Moda Mujer" %><br>
+    <%= form.check_box :man_fashion %> <%= form.label :woman_fashion, "Moda Hombre" %><br>
+    <%= form.check_box :kid_fashion %> <%= form.label :woman_fashion, "Moda Infantil" %><br>
     <%= form.submit "¡Suscribirme!" %>
   <% end %>
 </div>
