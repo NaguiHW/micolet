@@ -11,24 +11,28 @@
     <% end %>
   </div>
 <% end %>
-<div class="title">
-  <h1>micolet</h1>
-  <h5>Moda casi nueva con garantía</h5>
-</div>
+<div class="content">
+  <div class="title">
+    <h1>micolet'</h1>
+    <h5>Moda casi nueva con garantía</h5>
+  </div>
 
-<div class="message">
-  <h3>¡Bienvenid@! Proximamente abriremos nuestra web en este país.</h3>
-  <h4>Suscríbete para recibir nuestras novedades.</h4>
-</div>
+  <div class="message">
+    <h3>¡Bienvenid@! Proximamente abriremos nuestra web en este país.</h3>
+    <h4>Suscríbete para recibir nuestras novedades.</h4>
+  </div>
 
-<div class="form">
-  <%= form_with url: newsletters_path do |form| %>
-    <%= form.label :email, "Email" %><br>
-    <%= form.email_field :email, required: true, placeholder: 'email@example.com' %><br>
-    <p>Preferencias</p>
-    <%= form.check_box :woman_fashion %> <%= form.label :woman_fashion, "Moda Mujer" %><br>
-    <%= form.check_box :man_fashion %> <%= form.label :man_fashion, "Moda Hombre" %><br>
-    <%= form.check_box :kid_fashion %> <%= form.label :kid_fashion, "Moda Infantil" %><br>
-    <%= form.submit "¡Suscribirme!" %>
-  <% end %>
+  <div class="form">
+    <%= form_with url: newsletters_path do |form| %>
+      <%= form.label :email, "Email" %><br>
+      <%= form.email_field :email, required: true, placeholder: 'email@example.com' %><br>
+      <p>Preferencias</p>
+      <%= form.check_box :woman_fashion %> <%= form.label :woman_fashion, "Moda Mujer" %><br>
+      <%= form.check_box :man_fashion %> <%= form.label :man_fashion, "Moda Hombre" %><br>
+      <%= form.check_box :kid_fashion %> <%= form.label :kid_fashion, "Moda Infantil" %><br>
+      <div class="button">
+        <%= form.submit "¡Suscribirme!" %>
+      </div>
+    <% end %>
+  </div>
 </div>
