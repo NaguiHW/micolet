@@ -1,24 +1,34 @@
-# README
+# Micolet Newsletter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Micolet Newsletter es un landing page para suscribirse a un newsletter.
 
-Things you may want to cover:
+## Clonar e instalar repositorio
+```
+git clone git@github.com:NaguiHW/micolet.git
+```
+```
+cd micolet
+```
+```
+bundle
+```
 
-* Ruby version
+**IMPORTANTE:**
 
-* System dependencies
+Los requisitos para poder instalar el repositorio sin problemas es el siguiente:
+- Ruby: 3.0.1
+- Rails: 6.1.4
 
-* Configuration
+## Ejecutar repositorio
+```
+rails s
+```
+La ruta por defecto es la siguiente:
+```
+http://localhost:3000/
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Ejecutar Pruebas
+```
+bundle exec rspec
+```
