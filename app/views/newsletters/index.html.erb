@@ -9,4 +9,13 @@
 </div>
 
 <div class="form">
+  <%= form_with do |form| %>
+    <%= form.label :email, "Email" %><br>
+    <%= form.email_field :email, required: true, placeholder: 'email@example.com' %><br>
+    <p>Preferencias</p>
+    <%= form.check_box :woman_fashion %> Moda Mujer<br>
+    <%= form.check_box :man_fashion %> Moda Hombre<br>
+    <%= form.check_box :kid_fashion %> Moda Infantil<br>
+    <%= form.submit "¡Suscribirme!" %>
+  <% end %>
 </div>
