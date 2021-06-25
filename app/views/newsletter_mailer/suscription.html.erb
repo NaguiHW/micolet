@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Bienvenid@ a Micolet</h1>
+    <p>
+      Estarás recibiendo actualizaciones una vez que tengamos nueva información sobre tus preferencias.
+    </p>
+    <p>
+      Estas son tus preferencias:
+    </p>
+    <ul>
+      <% if @mujer %>
+        <li>Moda Mujer</li>
+      <% end %>
+      <% if @hombre %>
+        <li>Moda Hombre</li>
+      <% end %>
+      <% if @infantil %>
+        <li>Moda Infantil</li>
+      <% end %>
+    </ul>
+  </body>
+</html>
