@@ -12,6 +12,9 @@ cd micolet
 ```
 bundle
 ```
+```
+rails db:migrate
+```
 
 **IMPORTANTE:**
 
